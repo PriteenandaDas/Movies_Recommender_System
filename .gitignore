@@ -2,3 +2,4 @@ myenv
 config.json
 similarity.pkl
 __pycache__
+file_downloaded.py

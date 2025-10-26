@@ -3,6 +3,7 @@ import pickle
 import pandas as pd
 import json
 from omdb_utils import get_movie_details
+from file_downloader import download_similarity_file
 #import joblib
 
 
@@ -23,9 +24,9 @@ with open('movies_dict.pkl', 'rb') as f:
 
 movies=pd.DataFrame(movies_dict)
 
+download_similarity_file()
 with open('similarity.pkl', 'rb') as f:
     similarity = pickle.load(f)
-#similarity = joblib.load('similarity_compressed.pkl')
 
 st.set_page_config(
     page_title="Movie Recommender System",
