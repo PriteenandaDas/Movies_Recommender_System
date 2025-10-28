@@ -1,5 +1,2 @@
 myenv
-config.json
-similarity.pkl
 __pycache__
-file_downloader.py
